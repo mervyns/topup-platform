@@ -1,12 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import {
-  Nav,
-  Navbar,
-  NavItem,
-  MenuItem,
-  NavDropdown
-} from "react-bootstrap"
+import { Nav, Navbar, NavItem } from "react-bootstrap";
 
 class NavbarPage extends React.Component {
   constructor(props) {
@@ -31,11 +25,11 @@ class NavbarPage extends React.Component {
         <Navbar.Collapse>
           <Nav>
             <NavItem eventKey={1} componentClass={NavLink} href="/" to="/">
-              Home
-            </NavItem>
-            <NavItem eventKey={2} componentClass={NavLink} href="/wechat" to="/wechat">
               WeChat Top Up
             </NavItem>
+            {/* <NavItem eventKey={2} componentClass={NavLink} href="/wechat" to="/wechat">
+              WeChat Top Up
+            </NavItem> */}
           </Nav>
         </Navbar.Collapse>
       </Navbar>

@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import NavbarPage from "./layout/Navbar";
-import Landing from "./pages/Landing";
 import WeChatTopup from "./pages/WeChatTopup";
 
 class App extends Component {
