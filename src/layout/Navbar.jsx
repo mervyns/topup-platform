@@ -30,10 +30,10 @@ class NavbarPage extends React.Component {
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav>
-            <NavItem eventKey={1} href="/">
+            <NavItem eventKey={1} componentClass={NavLink} href="/" to="/">
               Home
             </NavItem>
-            <NavItem eventKey={2} href="/wechat">
+            <NavItem eventKey={2} componentClass={NavLink} href="/wechat" to="/wechat">
               WeChat Top Up
             </NavItem>
           </Nav>
