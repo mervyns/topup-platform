@@ -1,18 +1,5 @@
 import React from "react";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarNav,
-  NavItem,
-  NavLink,
-  NavbarToggler,
-  Collapse,
-  Dropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  Fa
-} from "mdbreact";
+import { NavLink } from 'react-router-dom';
 
 class NavbarPage extends React.Component {
   state = {
@@ -22,43 +9,23 @@ class NavbarPage extends React.Component {
 
   render() {
     return (
-      <Navbar
-        color="default-color"
-        dark
-        expand="md"
-        style={{ marginTop: "20px" }}
-      >
-        <NavbarBrand>
-          <strong className="white-text">Navbar</strong>
-        </NavbarBrand>
-        <NavbarToggler onClick={this.toggleCollapse} />
-        <Collapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
-          <NavbarNav left>
-            <NavItem>
-              <NavLink to="/">Home</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/wechat">WeChat Top Up</NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink to="/tnc">Terms and Conditions</NavLink>
-            </NavItem>
-            <NavItem>
-              <Dropdown>
-                <DropdownToggle nav caret>
-                  <div className="d-none d-md-inline">Dropdown</div>
-                </DropdownToggle>
-                <DropdownMenu className="dropdown-default" right>
-                  <DropdownItem href="#!">Action</DropdownItem>
-                  <DropdownItem href="#!">Another Action</DropdownItem>
-                  <DropdownItem href="#!">Something else here</DropdownItem>
-                  <DropdownItem href="#!">Something else here</DropdownItem>
-                </DropdownMenu>
-              </Dropdown>
-            </NavItem>
-          </NavbarNav>
-        </Collapse>
-      </Navbar>
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <NavLink to="/" className="navbar-brand">TopUpLa!</NavLink>
+      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span className="navbar-toggler-icon"></span>
+      </button>
+    
+      <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className="nav-item">
+            <NavLink to="/wechat" className="nav-link" activeClassName="selected">WeChat Top Up</NavLink>
+          </li>
+          <li className="nav-item">
+            <a className="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     );
   }
 }
