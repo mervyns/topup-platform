@@ -11,7 +11,7 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <NavbarPage />
-          <Route exact path="/" component={Landing} />
+          <Route exact path="/" component={WeChatTopup} />
           <Route exact path="/wechat" component={WeChatTopup} />
         </div>
     </BrowserRouter>
