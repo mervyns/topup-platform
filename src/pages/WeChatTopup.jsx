@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Panel } from "react-bootstrap";
+import { Grid, Row, Col, Panel } from "react-bootstrap";
 
 class WeChatTopup extends Component {
   constructor(props) {
@@ -33,9 +33,9 @@ class WeChatTopup extends Component {
   render() {
     return (
       <Fragment>
-        <div className="container-responsive">
-          <div className="row justify-content-center">
-            <div className="col-lg-3 col-md-12 col-sm-12 mx-1">
+        <Grid>
+          <Row>
+            <Col sm={12} md={12} lg={3} xl={3}>
               <Panel bsStyle="info">
                 <Panel.Heading>
                   <Panel.Title componentClass="h4">Current Rates</Panel.Title>
@@ -45,8 +45,8 @@ class WeChatTopup extends Component {
                   <li className="list-group-item">1 HKD : 0.85 CNY</li>
                 </ul>
               </Panel>
-            </div>
-            <div className="col-lg-8 col-md-12 col-sm-12">
+            </Col>
+            <Col sm={12} md={12} lg={8} xl={8}>
               <Panel bsStyle="info">
                 <Panel.Heading>
                   <Panel.Title componentClass="h3">
@@ -136,9 +136,9 @@ class WeChatTopup extends Component {
                   </Panel.Body>
                 </Panel>
               </Panel>
-            </div>
-          </div>
-        </div>
+            </Col>
+          </Row>
+        </Grid>
       </Fragment>
     );
   }
