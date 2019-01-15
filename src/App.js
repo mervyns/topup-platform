@@ -1,9 +1,7 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import logo from "./logo.svg";
 import 'font-awesome/css/font-awesome.min.css';
 import 'bootstrap-css-only/css/bootstrap.min.css';
-import 'mdbreact/dist/css/mdb.css';
 import "./App.css";
 import NavbarPage from "./layout/Navbar";
 import Landing from "./pages/Landing";
