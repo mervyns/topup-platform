@@ -1,8 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter, withRouter, Route } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
 import logo from "./logo.svg";
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap-css-only/css/bootstrap.min.css';
+import 'mdbreact/dist/css/mdb.css';
 import "./App.css";
-import Navbar from "./layout/Navbar";
+import NavbarPage from "./layout/Navbar";
 import Landing from "./pages/Landing";
 import WeChatTopup from "./pages/WeChatTopup";
 
@@ -11,7 +14,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Navbar />
+          <NavbarPage />
           <Route exact path="/" component={Landing} />
           <Route exact path="/wechat" component={WeChatTopup} />
         </div>

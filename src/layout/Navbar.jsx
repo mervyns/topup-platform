@@ -1,54 +1,66 @@
 import React from "react";
-import { Menu, Icon } from "antd";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarNav,
+  NavItem,
+  NavLink,
+  NavbarToggler,
+  Collapse,
+  Dropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  Fa
+} from "mdbreact";
 
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
-
-class Navbar extends React.Component {
+class NavbarPage extends React.Component {
   state = {
-    current: "mail"
+    isOpen: false
   };
-
-  handleClick = e => {
-    console.log("click ", e);
-    this.setState({
-      current: e.key
-    });
-  };
+  toggleCollapse = this.setState({ isOpen: !this.state.isOpen });
 
   render() {
     return (
-      <Menu
-        onClick={this.handleClick}
-        selectedKeys={[this.state.current]}
-        mode="horizontal"
+      <Navbar
+        color="default-color"
+        dark
+        expand="md"
+        style={{ marginTop: "20px" }}
       >
-        <SubMenu
-          title={
-            <span className="submenu-title-wrapper">
-              <Icon type="money-collect" />
-              Our Top Up Services
-            </span>
-          }
-        >
-          <Menu.Item key="setting:1">WeChat Pay Topup</Menu.Item>
-          <Menu.Item key="setting:2">Option 2</Menu.Item>
-        </SubMenu>
-        <Menu.Item key="contact">
-          <Icon type="customer-service" />
-          Instructions
-        </Menu.Item>
-        <Menu.Item key="contact">
-          <Icon type="customer-service" />
-          Contact Us
-        </Menu.Item>
-        <Menu.Item key="tnc">
-          <Icon type="info-circle" />
-          Terms and Conditions
-        </Menu.Item>
-      </Menu>
+        <NavbarBrand>
+          <strong className="white-text">Navbar</strong>
+        </NavbarBrand>
+        <NavbarToggler onClick={this.toggleCollapse} />
+        <Collapse id="navbarCollapse3" isOpen={this.state.isOpen} navbar>
+          <NavbarNav left>
+            <NavItem>
+              <NavLink to="/">Home</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/wechat">WeChat Top Up</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink to="/tnc">Terms and Conditions</NavLink>
+            </NavItem>
+            <NavItem>
+              <Dropdown>
+                <DropdownToggle nav caret>
+                  <div className="d-none d-md-inline">Dropdown</div>
+                </DropdownToggle>
+                <DropdownMenu className="dropdown-default" right>
+                  <DropdownItem href="#!">Action</DropdownItem>
+                  <DropdownItem href="#!">Another Action</DropdownItem>
+                  <DropdownItem href="#!">Something else here</DropdownItem>
+                  <DropdownItem href="#!">Something else here</DropdownItem>
+                </DropdownMenu>
+              </Dropdown>
+            </NavItem>
+          </NavbarNav>
+        </Collapse>
+      </Navbar>
     );
   }
 }
 
-export default Navbar;
+export default NavbarPage;
