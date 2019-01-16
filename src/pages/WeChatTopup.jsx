@@ -48,7 +48,6 @@ class WeChatTopup extends Component {
 
   render() {
     const { currency, rateSGDToCNY, rateHKDToCNY } = this.state; 
-    const currentDate = Date.now()
     return (
       <Fragment>
         <Grid>
