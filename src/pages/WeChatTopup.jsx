@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from "react";
+import dayjs from 'dayjs';
 import {
   Grid,
   Row,
@@ -46,7 +47,8 @@ class WeChatTopup extends Component {
   };
 
   render() {
-    const { currency, rateSGDToCNY, rateHKDToCNY } = this.state;
+    const { currency, rateSGDToCNY, rateHKDToCNY } = this.state; 
+    const currentDate = Date.now()
     return (
       <Fragment>
         <Grid>
@@ -54,7 +56,7 @@ class WeChatTopup extends Component {
             <Col sm={12} md={12} lg={3} xl={3}>
               <Panel bsStyle="info">
                 <Panel.Heading>
-                  <Panel.Title componentClass="h4">Current Rates</Panel.Title>
+                  <Panel.Title componentClass="h4">Current Rates as of {dayjs(Date.now()).format('ddd DD/MM/YYYY')}</Panel.Title>
                 </Panel.Heading>
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item">
