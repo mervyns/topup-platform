@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 import "./App.css";
 import NavbarPage from "./layout/Navbar";
 import WeChatTopup from "./pages/WeChatTopup";
 import WeChatWallet from "./pages/WeChatWallet";
 import PayOnBehalf from "./pages/PayOnBehalf";
+
+library.add(fab)
 
 class App extends Component {
   render() {

@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Grid, Row, Col, Panel, PageHeader } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class PayOnBehalf extends Component {
   render() {
@@ -34,6 +35,13 @@ class PayOnBehalf extends Component {
                     and process the payment for you.
                   </p>
                   <p>
+                    <a href="https://wa.me/6583388886/?text=urlencodedtext">
+                      <i className="fas fa-apple" />
+                      <FontAwesomeIcon icon={["fab", "whatsapp"]} />
+                      WhatsApp Us +65-83388886
+                    </a>
+                  </p>
+                  <p>
                     Please note that for this method, we require you to transfer
                     us the equivalent payment in your preferred currency first
                     before we make the payment for you.
@@ -45,6 +53,13 @@ class PayOnBehalf extends Component {
                     Send us the links for your item and your desired shipping
                     address. We will then purchase the items for you with our
                     shopping cart and ship it to your desired address.
+                  </p>
+                  <p>
+                    <a href="https://wa.me/6583388886/?text=urlencodedtext">
+                      <i className="fas fa-apple" />
+                      <FontAwesomeIcon icon={["fab", "whatsapp"]} />
+                      WhatsApp Us +65-83388886
+                    </a>
                   </p>
                   <p>
                     For this method of payment, we can accept 50% of the order
