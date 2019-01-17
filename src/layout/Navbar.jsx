@@ -27,6 +27,9 @@ class NavbarPage extends React.Component {
             <NavItem eventKey={1} componentClass={NavLink} href="/" to="/">
               WeChat Top Up
             </NavItem>
+            <NavItem eventKey={1} componentClass={NavLink} href="/payonbehalf" to="/payonbehalf">
+              Pay On Behalf (代付)
+            </NavItem>
             <NavItem eventKey={1} componentClass={NavLink} href="/wallet" to="/wallet">
               How To Activate WeChat Pay
             </NavItem>
