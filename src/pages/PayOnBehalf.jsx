@@ -36,9 +36,8 @@ class PayOnBehalf extends Component {
                   </p>
                   <p>
                     <a href="https://wa.me/6583388886/?text=urlencodedtext">
-                      <i className="fas fa-apple" />
                       <FontAwesomeIcon icon={["fab", "whatsapp"]} />
-                      WhatsApp Us +65-83388886
+                      {" "}WhatsApp Us +65-83388886
                     </a>
                   </p>
                   <p>
@@ -46,9 +45,11 @@ class PayOnBehalf extends Component {
                     us the equivalent payment in your preferred currency first
                     before we make the payment for you.
                   </p>
-                  <Panel.Title componentClass="h4">
-                    <p>Method 2 - We Purchase for you</p>
-                  </Panel.Title>
+                </Panel.Body>
+                <Panel.Title componentClass="h4">
+                  <p>Method 2 - We Purchase for you</p>
+                </Panel.Title>
+                <Panel.Body>
                   <p>
                     Send us the links for your item and your desired shipping
                     address. We will then purchase the items for you with our
@@ -58,7 +59,7 @@ class PayOnBehalf extends Component {
                     <a href="https://wa.me/6583388886/?text=urlencodedtext">
                       <i className="fas fa-apple" />
                       <FontAwesomeIcon icon={["fab", "whatsapp"]} />
-                      WhatsApp Us +65-83388886
+                      {" "}WhatsApp Us +65-83388886
                     </a>
                   </p>
                   <p>
@@ -67,7 +68,9 @@ class PayOnBehalf extends Component {
                     from the supplier.
                   </p>
                 </Panel.Body>
-              </Panel>
+                </Panel>
+                </Col>
+            <Col sm={12} md={12} lg={6} xl={6}>
               <Panel bsStyle="info">
                 <Panel.Heading>
                   <Panel.Title componentClass="h4">
