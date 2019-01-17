@@ -35,7 +35,7 @@ class PayOnBehalf extends Component {
                     and process the payment for you.
                   </p>
                   <p>
-                    <a href="https://wa.me/6583388886/?text=urlencodedtext">
+                    <a href="https://wa.me/6583388886/?'Hi! I am interested in the WeChat Top Up.'">
                       <FontAwesomeIcon icon={["fab", "whatsapp"]} />
                       {" "}WhatsApp Us +65-83388886
                     </a>
@@ -56,7 +56,7 @@ class PayOnBehalf extends Component {
                     shopping cart and ship it to your desired address.
                   </p>
                   <p>
-                    <a href="https://wa.me/6583388886/?text=urlencodedtext">
+                    <a href="https://wa.me/6583388886/?text='Hi! I am interested in the WeChat Top Up.'">
                       <i className="fas fa-apple" />
                       <FontAwesomeIcon icon={["fab", "whatsapp"]} />
                       {" "}WhatsApp Us +65-83388886

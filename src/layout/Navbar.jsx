@@ -54,7 +54,7 @@ class NavbarPage extends React.Component {
             </NavItem>
             <NavItem
               eventKey={9}
-              href="https://wa.me/6583388886/?text=urlencodedtext"
+              href="https://wa.me/6583388886/?text='Hi! I am interested in the WeChat Top Up.'"
             >
               <FontAwesomeIcon icon={["fab", "whatsapp"]} size="2x" />
             </NavItem>
